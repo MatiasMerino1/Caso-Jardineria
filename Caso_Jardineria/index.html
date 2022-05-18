@@ -11,7 +11,13 @@
     <title>Jardineria Happy Garden</title>
 </style>
 </head>
-<body>  
+
+<body>
+  <ul>
+    <li><img id="IconoClima" src=""></li>
+    <li id="Descripcion"></li>
+    <li id="Temperatura"></li>
+  </ul>
     <div id="Botones">
       <p>
       <button id="inicio"> <a id="vinculo1" href="InicioSesion.html">Inicio de Sesion</a></button>
@@ -65,10 +71,9 @@
     </a>
   
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <li><a class="dropdown-item" href="#">Maceteros </a></li>
-      <li><a class="dropdown-item" href="#">Tierra de hojas</a></li>
-      <li><a class="dropdown-item" href="#">Flores</a></li>
-      <li><a class="dropdown-item" href="#">Arbustos</a></li>
+      <li><a class="dropdown-item" href="Maceteros.html">Maceteros </a></li>
+      <li><a class="dropdown-item" href="index.html">Tierra de hojas</a></li>
+      <li><a class="dropdown-item" href="Plantas.html">Plantas</a></li>
     </ul>
   </div>
 <br>
@@ -110,38 +115,22 @@
         </div>
       </div>
 
-      <div class="card" id="carta5">
-        <img src="https://www.anasacjardin.cl/wp-content/uploads/2014/01/tierradehojas_300x278.jpg" width="200" height="150" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Tierra de Hojas Anasac </h3>
-          <p class="card-text">Tierra de hojas Marca Anasac 6lts</p>
-        </div>
-      </div>
-      <div class="card" id="carta6">
-        <img src="https://www.anasacjardin.cl/wp-content/uploads/2014/01/tierradehojas_300x278.jpg" width="200" height="150" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Tierra de Hojas Anasac </h3>
-          <p class="card-text">Tierra de hojas Marca Anasac 6lts</p>
-        </div>
-      </div>
-
-      <div class="card" id="carta7">
-        <img src="https://www.anasacjardin.cl/wp-content/uploads/2014/01/tierradehojas_300x278.jpg" width="200" height="150" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Tierra de Hojas Anasac </h3>
-          <p class="card-text">Tierra de hojas Marca Anasac 6lts</p>
-        </div>
-      </div>
-
-      <div class="card" id="carta8">
-        <img src="https://www.anasacjardin.cl/wp-content/uploads/2014/01/tierradehojas_300x278.jpg" width="200" height="150" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h3 class="card-title">Tierra de Hojas Anasac </h3>
-          <p class="card-text">Tierra de hojas Marca Anasac 6lts</p>
-        </div>
-      </div>
 </div>
-
+<script>
+var Icono_Clima = document.getElementById("IconoClima")
+var Temperatura = document.getElementById("Temperatura")
+var Descripcion_clima = document.getElementById("Descripcion")
+var Ubicacion_actual = navigator.geolocation.getCurrentPosition(function(data){
+    var latitud = data.coords.latitude
+    var longitud = data.coords.longitude
+    $.getJSON(`https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&units=metric&appid=cbc6e4864eaeb1415d242341fde7954e`,function(data){
+    var icono = data.weather[0].icon
+    Icono_Clima.setAttribute("src",`https://openweathermap.org/img/wn/${icono}@2x.png`)
+    Temperatura.innerHTML = data.main.temp+"°C"
+    Descripcion_clima.innerHTML = data.weather[0].description
+})
+}) 
+</script>
 
 </body>
 </html>
