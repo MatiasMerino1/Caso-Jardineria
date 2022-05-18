@@ -1,43 +1,42 @@
-body {
-    background:linear-gradient(150deg, rgb(174, 150, 231), rgba(32, 121, 133, 0.938));
+body{
+    background:rgba(250, 248, 248, 0.888);
     padding: 25px;
-    height: 100vh;
-    font-family: Montserrat;
-    
 }
 
-
-.Compañia {
+#Compañia {
     display: inline-block;
     block-size: auto;
-    box-shadow: 5px 5px 10px;
-    width: 440px;
-    background: linear-gradient(150deg, rgb(210, 193, 255), lightblue);
+    width: 380px;
+    border-color: green;
+    border-bottom: 1px solid;
+    background:none;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 1em;
 }
+
 #Logo {
     float: left;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 1em;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 
 #Titulo{
-    font-style: italic;
-    font-size: 30px;
+    display: block;
+    block-size: auto;
+    font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
 
 #Slogan{
-    font-size: 15px;
+    display: block;
+    block-size: auto;
+    font-size:15px;
     font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
-
 .container {
     display: block;
     block-size: auto;
@@ -46,7 +45,7 @@ body {
     padding: 5px;
     margin: auto;
     max-width: 525px;
-    height: 600px;
+    height: 570px;
     background-color: aliceblue;
     text-align: center;
     border-radius: 1em;
