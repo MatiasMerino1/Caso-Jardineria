@@ -1,39 +1,73 @@
 body{
-    background: linear-gradient(150deg, rgb(180, 161, 137), rgb(218, 138, 138));
-    height: 100vh;
+    background-color: rgba(250, 248, 248, 0.888);
     padding: 25px;
 }
-
-.Compañia {
+ul{
+    width: 100%;
+    list-style-type: none ;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 8px;
+    margin-bottom: 0;
+}
+#Compañia {
     display: inline-block;
     block-size: auto;
-    width: 440px;
-    background: linear-gradient(150deg, rgb(210, 193, 255), lightblue);
-    padding: 15px;
+    width: 380px;
+    border-color: green;
+    border-bottom: 1px solid;
+    background:none;
+    padding: 10px;
     margin-bottom: 20px;
     border-radius: 1em;
 }
+
 #Logo {
     float: left;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 1em;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 
 #Titulo{
-    font-style: italic;
-    font-size: 30px;
+    display: block;
+    block-size: auto;
+    font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
 
 #Slogan{
-    font-size: 15px;
+    display: block;
+    block-size: auto;
+    font-size:15px;
     font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+#vinculo1{
+    padding: 5px;
+    color: #54a31b;
+    outline: none;
+    text-decoration: none;
 }
 
+#vinculo1:focus{
+    color: #54a31b;
+}
+#vinculo1:hover{
+    border-bottom: 1px solid;
+    background: rgb(235, 226, 223);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
 #contacto{
     float: right;
     background:transparent ;
@@ -47,6 +81,22 @@ body{
     border-bottom: 5px inset rgb(187, 215, 240) ;
     background-color: rgb(187, 215, 240);
     border-radius: 1em;
+}
+#vinculo2{
+    padding: 5px;
+    color: #54a31b;
+    outline: none;
+    text-decoration: none;
+}
+
+#vinculo2:focus{
+    color: #54a31b;
+}
+#vinculo2:hover{
+    border-bottom: 1px solid;
+    background: rgb(235, 226, 223);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
 }
 .container{
     display:inline-block;
