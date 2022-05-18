@@ -11,22 +11,26 @@
     <title>Registrarse</title>
 </head>
 <body>
-    <button id="contacto" class="btn btn-primary"><a href="Contactanos.html">Contactanos</a></button>
-
-    <div class="Compañia">
-        <img src="Logo/Logo_happy_garden.png" id="Logo" alt="">
-        
+    <button id="contacto" class="btn btn-primary"><a id="vinculo1" href="Contactanos.html">Contactanos</a></button>
+    <ul>
+        <li><img id="IconoClima" src=""></li>
+        <li id="Descripcion"></li>
+        <li id="Temperatura"></li>
+      </ul>
+    <center>
+        <div id="Compañia">
             <div>
+                <img src="Logo/Logo_happy_garden.png" id="Logo" alt="">  
                 <h1 id="Titulo">
                     Jardinería Happy Garden
-                </h1>
+                </h1>    
             </div>
             <div>
-                <h2 id="Slogan">
-                    La jardineria de todos para todos
-                </h2>
+                <h2 id="Slogan">La jardineria de todos para todos</h2>
             </div>
-    </div>
+        </div>
+    </center>
+    
     <center>
     <div class="container">
         <h3 id="Registro">Registro</h3>
@@ -67,11 +71,26 @@
                 </div>
                 
                     <center>
-                    <button id="ingresar"><a href="index.html">Registrarse</a></button>
+                    <button id="ingresar"><a id="vinculo2" href="index.html">Registrarse</a></button>
                     </center>
             </form>
         </div>
     </div>
     </center>
+<script>
+    var Icono_Clima = document.getElementById("IconoClima")
+    var Temperatura = document.getElementById("Temperatura")
+    var Descripcion_clima = document.getElementById("Descripcion")
+    var Ubicacion_actual = navigator.geolocation.getCurrentPosition(function(data){
+        var latitud = data.coords.latitude
+        var longitud = data.coords.longitude
+        $.getJSON(`https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&units=metric&appid=cbc6e4864eaeb1415d242341fde7954e`,function(data){
+        var icono = data.weather[0].icon
+        Icono_Clima.setAttribute("src",`https://openweathermap.org/img/wn/${icono}@2x.png`)
+        Temperatura.innerHTML = data.main.temp+"°C"
+        Descripcion_clima.innerHTML = data.weather[0].description
+    })
+    }) 
+    </script>
 </body>
 </html>
