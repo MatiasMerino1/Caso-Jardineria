@@ -9,52 +9,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Inicio de Sesion</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
-
-
-
 </head>
 <body id="fondo">
-    <p>
-        <button id="contacto"><a id="vinculo" href="Contactanos.html">Contactanos</a></button>
-    </p>
-    <br>
-    <center>
+    <button id="contacto"><a href="Contactanos.html">Contactanos</a></button>
+    
     <div id="Compañia">
-        
         <div>
-            <img src="Logo/Logo_happy_garden.png" id="Logo" alt="">  
+            <img src="https://images.vexels.com/media/users/3/200975/isolated/preview/7ac53e603584ee235f9d4d0b1e2405ea-planta-dando-mano-con-color-tierra.png" id="Logo" alt="">  
             <h1 id="Titulo">
                 Jardinería Happy Garden
             </h1>    
         </div>
         <div>
-            <h2 id="Slogan">La jardinería de todos para todos</h2>
+            <h2 id="Slogan">La jardineria de todos para todos</h2>
         </div> 
-    </div> 
-    </center>      
+    </div>       
     <center>
     <div id="Caja">
     <h3 id="InicioSesion">Inicio de Sesión</h3>
     <br>
-        <label for="texto">Ingrese su nombre de usuario:</label>
-        <input id="casilla1" type="" placeholder="Nombre de usuario" value="">
-            <br>
-            <br>
-        <label for="texto">Ingrese contraseña:</label>
-        <input id="casilla2" type="" placeholder="Contraseña" value="">
-        <br>
+        <form action="" method="post">
+        <label for="texto">Ingrese su usuario</label>
+        <input id="usuario" type="text" placeholder="Nombre de usuario" value="" class="form-control">
+        <label for="texto">Ingrese contraseña</label>
+        <input id="contraseña" type="text" placeholder="Contraseña" value="" class="form-control">
             <div>
-                <br>
-                <h6>¿Has olvidado tu contraseña?</h6>
+                <h6><a href="">¿Has olvidado tu contraseña?</a></h6>
             </div>
 
-        <button type="button" class="btn btn-primary btn-sm">Ingresar</button>
+        <button type="submit" class="btn btn-primary btn-sm">Ingresar</button>
+        </form>
     </div>
     </center>
- 
-
-    
 </body>
 </html>
