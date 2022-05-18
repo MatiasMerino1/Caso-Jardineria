@@ -3,11 +3,36 @@ body{
     padding: 25px;
 }
 
+ul{
+    width: 100%;
+    list-style-type: none ;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#carousel{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+li{
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 8px;
+    margin-bottom: 0;
+}
+
+
 #Compañia {
     display: inline-block;
     block-size: auto;
     width: 380px;
-    border-color: transparent;
+    border-color: green;
+    border-bottom: 1px solid;
     background:none;
     padding: 10px;
     margin-bottom: 20px;
@@ -127,62 +152,31 @@ body{
 #carta1{
     float: left;
     width: 18rem;
-    margin-right: 100px;
+    margin: auto;
+    max-width: 525px;
 }
 
 #carta2{
     width: 18rem;
     display: inline-block;
     block-size: auto;
-    margin-right: 95px;
+    margin: auto;
+    max-width: 525px;
 }
 
 #carta3{
     width: 18rem;
     display: inline-block;
     block-size: auto;
-    margin-right: 95px;
+    margin: auto;
+    max-width: 525px;
 }
 
 #carta4{
     width: 18rem;
     display: inline-block;
     block-size: auto;
+    margin: auto;
+    max-width: 525px;
     
 }
-
-#carta5{
-    width: 18rem;
-    display: block;
-    block-size: auto;
-    margin-top: 100px;
-}
-
-#carta6{
-    position: relative;
-    width: 18rem;
-    display: inline-block;
-    block-size: auto;
-    top: -285px;
-    left: 390px;
-    margin-right: 95px;
-}
-
-#carta7{
-    position: relative;
-    width: 18rem;
-    display: inline-block;
-    block-size: auto;
-    top: -285px;
-    left: 390px;
-    margin-right: 95px;
-}
-
-#carta8{
-    width: 18rem;
-    display: inline-block;
-    block-size: auto;
-    top: -285px;
-    left: 390px;
-}
-
