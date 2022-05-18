@@ -75,8 +75,12 @@
 </head>
 
 <body>
-
-  <button id="contacto"><a href="Contactanos.html">Contactanos</a></button>
+  <ul>
+    <li><img id="IconoClima" src=""></li>
+    <li id="Descripcion"></li>
+    <li id="Temperatura"></li>
+</ul>
+  <button id="contacto"><a id="vinculo1" href="Contactanos.html">Contactanos</a></button>
 
   <div class="Seguimiento">
     <h1>Seguimiento</h1>
@@ -113,6 +117,21 @@
   </article>
   <input type="button" id="parar" value="Parar" onclick="detener();"/>
 
+<script>
+  var Icono_Clima = document.getElementById("IconoClima")
+  var Temperatura = document.getElementById("Temperatura")
+  var Descripcion_clima = document.getElementById("Descripcion")
+  var Ubicacion_actual = navigator.geolocation.getCurrentPosition(function(data){
+      var latitud = data.coords.latitude
+      var longitud = data.coords.longitude
+      $.getJSON(`https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&units=metric&appid=cbc6e4864eaeb1415d242341fde7954e`,function(data){
+      var icono = data.weather[0].icon
+      Icono_Clima.setAttribute("src",`https://openweathermap.org/img/wn/${icono}@2x.png`)
+      Temperatura.innerHTML = data.main.temp+"°C"
+      Descripcion_clima.innerHTML = data.weather[0].description
+  })
+  }) 
+</script>
 </body>
 
 </html>
