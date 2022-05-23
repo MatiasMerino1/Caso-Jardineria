@@ -1,0 +1,228 @@
+body{
+    background-color: rgba(250, 248, 248, 0.888);
+    padding: 25px;
+}
+#Compañia {
+    display: inline-block;
+    block-size: auto;
+    width: 380px;
+    border-color: green;
+    border-bottom: 1px solid;
+    background:none;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 1em;
+}
+
+#Logo {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+#Titulo{
+    display: block;
+    block-size: auto;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+#Slogan{
+    display: block;
+    block-size: auto;
+    font-size:15px;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+ul{
+    list-style-type: none ;
+    padding-inline-start: 40px;
+}
+
+li{
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 8px;
+}
+
+#IconoClima{
+    position: relative;
+    top: -10px;
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    width: 60px;
+    height: 60px;
+    
+}
+
+#Temperatura{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+}
+
+#Descripcion{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    margin-right: 8px;
+}
+#Botones{
+    float: right;
+    margin-right: 15px;
+    border-bottom: 1px solid;
+    border-color: green;
+    border-radius: 1em;
+}
+
+
+#inicio{
+    border-color: transparent;
+    background: none;
+    border-right: 1px solid;
+}
+
+#vinculo1{
+    padding: 5px;
+    color: #54a31b;
+    outline: none;
+    text-decoration: none;
+}
+
+#vinculo1:focus{
+    color: #54a31b;
+}
+#vinculo1:hover{
+    border-bottom: 1px solid;
+    background: rgb(235, 226, 223);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+
+#Registrarse{
+    border-color: transparent;
+    background: none;
+    border-right: 1px solid;
+}
+
+#vinculo2{
+    padding: 5px;
+    color: #54a31b;
+    outline: none;
+    text-decoration: none;
+}
+
+#vinculo2:focus{
+    color: #54a31b;
+}
+
+#vinculo2:hover{
+    border-bottom: 1px solid;
+    background: rgb(235, 226, 223);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+#contacto{
+    border-color: transparent;
+    margin-left: 2px;
+    background: none;
+    
+}
+
+#vinculo3{
+    padding: 5px;
+    color: #54a31b;
+    outline: none;
+    text-decoration: none;
+}
+
+#vinculo2:focus{
+    color: #54a31b;
+}
+
+#vinculo3:hover{
+    border-bottom: 1px solid;
+    background: rgb(235, 226, 223);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+#foto1{
+    height: 200px;
+}
+
+#foto2{
+    height: 200px;
+}
+
+#foto3{
+    height: 200px;
+}
+
+#carta1{
+    background: rgb(235, 235, 235);
+    float: left;
+    width: 18rem;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: rgb(116, 191, 116);
+}
+
+#fotoCarta1{
+    height: 180px;
+}
+#carta2{
+    background: rgb(235, 235, 235);
+    max-width: 18rem;
+    display: inline-block;
+    position: relative;
+    bottom: 23px;
+    block-size: auto;
+    margin-right: 95px;
+    border: 2px solid;
+    border-color: rgb(116, 191, 116);
+}
+#fotoCarta2{
+    height: 180px;
+}
+#carta3{
+    background: rgb(235, 235, 235);
+    width: 18rem;
+    display: inline-block;
+    block-size: auto;
+    margin-right: 95px;
+    border: 2px solid;
+    border-color: rgb(116, 191, 116);
+}
+
+#fotoCarta3{
+    height: 180px;
+}
+#carta4{
+    background: rgb(235, 235, 235);
+    width: 18rem;
+    display: inline-block;
+    position: relative;
+    bottom: 45px;
+    block-size: auto;
+    border: 2px solid;
+    border-color: rgb(116, 191, 116);
+    margin-bottom: 5px;
+}
+#fotoCarta4{
+    height: 180px;
+}
+.dropdown-menu{
+    width: auto;
+}

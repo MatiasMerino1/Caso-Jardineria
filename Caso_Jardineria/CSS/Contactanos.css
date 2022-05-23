@@ -1,0 +1,147 @@
+body{
+    background:rgba(250, 248, 248, 0.888);
+    padding: 25px;
+}
+ul{
+    list-style-type: none ;
+    padding-inline-start: 40px;
+}
+
+li{
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 8px;
+}
+#IconoClima{
+    position: relative;
+    top: -10px;
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    width: 60px;
+    height: 60px;
+    
+}
+
+#Temperatura{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+}
+
+#Descripcion{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    margin-right: 8px;
+}
+#Compañia {
+    display: inline-block;
+    block-size: auto;
+    width: 380px;
+    border-color: green;
+    border-bottom: 1px solid;
+    background:none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 1em;
+}
+
+#Logo {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+#Titulo{
+    display: block;
+    block-size: auto;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+#Slogan{
+    display: block;
+    block-size: auto;
+    font-size:15px;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+.container {
+    display: block;
+    block-size: auto;
+    border: inset turquoise;
+    box-shadow: 5px 5px 10px;
+    padding: 5px;
+    margin: auto;
+    max-width: 525px;
+    max-height: 625px;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 1em;
+}
+
+.row {
+    display: inline-block;
+    block-size: auto;
+    max-width: 450px;
+}
+#Formulario{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 5px inset rgb(187, 215, 240) ;
+    background-color: rgb(187, 215, 240);
+    border-radius: 1em;
+}
+#inputNombre {
+    width: 415px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#inputCorreo{
+    width: 415px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#inputNumeroTel {
+    width: 44%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#inputCiudad {
+    width: 415px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#rut{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    position: relative;
+    right: 37px;
+}
+
+#Rut{
+    position: relative;
+    left: 74px;
+}
+#pasaporte {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#inputComentario{
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 420px;
+    height: 100px;
+}
+
+#enviar {
+    margin-top: 10px;
+    float: left;
+}
+#limpiar {
+    margin-top: 10px;
+    float: right;
+}

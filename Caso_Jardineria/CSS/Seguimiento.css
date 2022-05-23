@@ -1,0 +1,157 @@
+body{
+    background-color: rgba(250, 248, 248, 0.888);
+    padding: 25px;
+}
+#Compañia {
+    display: inline-block;
+    block-size: auto;
+    width: 380px;
+    border-color: green;
+    border-bottom: 1px solid;
+    background:none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 1em;
+}
+
+#Logo {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 75px;
+    height: 75px;
+}
+
+#Titulo{
+    display: block;
+    block-size: auto;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+#Slogan{
+    display: block;
+    block-size: auto;
+    font-size:15px;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+ul{
+    list-style-type: none ;
+    padding-inline-start: 40px;
+}
+li{
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 8px;
+    margin-bottom: 0;
+}
+#IconoClima{
+    position: relative;
+    top: -10px;
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    width: 60px;
+    height: 60px;
+    
+}
+
+#Temperatura{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+}
+
+#Descripcion{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    margin-right: 8px;
+}
+#progress{
+    max-width: 1000px;
+}
+
+#contacto{
+    float:right;
+    border-color: transparent;
+    background: none;
+
+}
+
+#vinculo1{
+    padding: 5px;
+    color: #54a31b;
+    outline: none;
+    text-decoration: none;
+}
+
+#vinculo1:focus{
+    color: #54a31b;
+}
+#vinculo1:hover{
+    border-bottom: 1px solid;
+    background: rgb(235, 226, 223);
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+}
+.container{
+    display: block;
+    block-size: auto;
+    padding: 5px;
+    max-width: 230px;
+    border: solid #7c79733b 2px;
+    box-shadow:  0px 0px 10px#70706e;
+    border-radius: 10px;
+}
+
+
+.Seguimiento{
+    display: block;
+    block-size: auto;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    margin: 50px auto;
+    width: 70%;
+    border: 2px solid #7c79733b;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #70706e;
+    color: white;
+    text-align: center;
+}
+
+#mapa {
+    height: 400px;
+    width: auto;
+    max-width: 700px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#parar {
+    display: block;
+    margin: 20px auto 30px;
+    width: 100px;
+    border: 2px solid #7c79733b;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #70706e;
+    color: black;
+}
+
+#parar:hover {
+    border: 2px solid #2E5E90;
+    box-shadow: 0 0 4px #2E5E90;
+    color: #2E5E90;
+}
