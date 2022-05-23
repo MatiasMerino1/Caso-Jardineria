@@ -18,6 +18,32 @@ li{
     padding: 8px;
     margin-bottom: 0;
 }
+#IconoClima{
+    position: relative;
+    top: -10px;
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    width: 60px;
+    height: 60px;
+    
+}
+
+#Temperatura{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+}
+
+#Descripcion{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    margin-right: 8px;
+}
 #progress{
     max-width: 1000px;
 }
@@ -78,9 +104,9 @@ article {
 }
 
 #mapa {
-    height: 500px;
+    height: 400px;
     width: auto;
-    max-width: 500px;
+    max-width: 700px;
     padding: 0;
     margin-bottom: 20px;
 }
