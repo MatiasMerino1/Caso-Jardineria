@@ -83,12 +83,16 @@ li{
 #Botones{
     float: right;
     margin-right: 15px;
+    border-bottom: 1px solid;
+    border-color: green;
+    border-radius: 1em;
 }
 
 
 #inicio{
     border-color: transparent;
     background: none;
+    border-right: 1px solid;
 }
 
 #vinculo1{
@@ -112,6 +116,7 @@ li{
 #Registrarse{
     border-color: transparent;
     background: none;
+    border-right: 1px solid;
 }
 
 #vinculo2{
@@ -134,6 +139,7 @@ li{
 
 #contacto{
     border-color: transparent;
+    margin-left: 2px;
     background: none;
     
 }
