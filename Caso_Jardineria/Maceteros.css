@@ -193,6 +193,7 @@ li{
     display: inline-block;
     block-size: auto;
     margin-right: 95px;
+    margin-bottom: 10px;
     border: 2px solid;
     border-color: rgb(116, 191, 116);
 }
@@ -207,6 +208,7 @@ li{
     margin-right: 95px;
     border: 2px solid;
     border-color: rgb(116, 191, 116);
+    margin-bottom: 10px;
 }
 
 #fotoCarta3{
@@ -223,10 +225,6 @@ li{
 }
 #fotoCarta4{
     height: 180px;
-}
-#comentario{
-    width: 700px;
-    height: 200px;
 }
 
 .dropdown-menu{
