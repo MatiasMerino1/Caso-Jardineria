@@ -2,7 +2,43 @@ body{
     background:rgba(250, 248, 248, 0.888);
     padding: 25px;
 }
+ul{
+    list-style-type: none ;
+    padding-inline-start: 40px;
+}
 
+li{
+    float: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding: 8px;
+}
+#IconoClima{
+    position: relative;
+    top: -10px;
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    width: 60px;
+    height: 60px;
+    
+}
+
+#Temperatura{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+}
+
+#Descripcion{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    margin-right: 8px;
+}
 #Compañia {
     display: inline-block;
     block-size: auto;
