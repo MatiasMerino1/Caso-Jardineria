@@ -16,6 +16,32 @@ li{
     margin-bottom: 0;
 }
 
+#IconoClima{
+    position: relative;
+    top: -10px;
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    width: 60px;
+    height: 60px;
+    
+}
+
+#Temperatura{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+}
+
+#Descripcion{
+    border: 1px solid;
+    border-radius: 1em;
+    border-color: rgb(148, 147, 147);
+    background: rgb(206, 202, 202);
+    margin-right: 8px;
+}
 #Compañia {
     display: inline-block;
     block-size: auto;
