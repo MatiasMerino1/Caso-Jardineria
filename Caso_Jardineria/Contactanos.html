@@ -9,7 +9,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <title>Contáctanos!</title>
- 
+<script>
+    $(document).ready(function(){
+    console.log("Hola") 
+    });
+</script>
 
 <script>
     function habilitar(e) {
@@ -35,13 +39,10 @@
         document.getElementsByName(e.id)[0].disabled=false;
     }
     </script>
+
+
 </head>
 <body>
-    <ul>
-        <li><img id="IconoClima" src=""></li>
-        <li id="Descripcion"></li>
-        <li id="Temperatura"></li>
-    </ul>
     <center>
     <div id="Compañia">
         <div>
@@ -51,15 +52,15 @@
             </h1>    
         </div>
         <div>
-            <h2 id="Slogan">La jardineria de todos para todos</h2>
+            <h2 id="Slogan">La jardinería de todos para todos</h2>
         </div>
-            
     </div>
     </center>
     <div class="container">
         <h3 id="Formulario">Formulario</h3>
         <div class="row">
             <form action="" method="post">
+    
             <div class="form-group">
                 <label for="inputNombre">Ingrese Nombre completo:</label>
                 <input type="text" id="inputNombre" placeholder="Ej: Juan Manuel De la Roza" class="form-control" required>
@@ -73,7 +74,7 @@
 
             <div class="form-group">
                 <label for="inputNumeroTel">Ingrese su número telefónico:</label>
-                <input type="number" id="inputNumeroTel" placeholder="Ej: 56932178465" class="form-control" >
+                <input type="number" id="inputNumeroTel" placeholder="Ej: 56932178465" class="form-control" required>
             </div>
 
             <div class="form-group">
@@ -90,7 +91,7 @@
                 <div id="rut">
                     <input type="radio" id="inputRut" name="InputIdentificacion" value="1" onclick="habilitar(this)">
                     <label for="inputRut">Ingrese Rut:</label>
-                    <input type="text" name="inputRut" placeholder="Ej: 12345678-9" disabled="true" required>
+                    <input type="text" name="inputRut" id="Rut" placeholder="Ej: 12345678-9" disabled="true" required>
                 </div>
                 
                 <div id="pasaporte">
@@ -98,17 +99,15 @@
                     <label for="Pasaporte">Ingrese Nro Pasaporte:</label>
                     <input type="text" name="Pasaporte" placeholder="18AK3421K" disabled="true" required>
                 </div>
-                <br>
+            
 
             </div>
 
             <div class="form-group">
-                
+                <fieldset>
                 <label for="inputComentario">Ingrese un comentario sobre en lo que le gustaria participar:</label>
-                <br>
-                <input type="text" id="inputComentario" placeholder="Ingresar comentario aquí" class="form-control">
-               
-
+                <textarea name="" id="inputComentario" cols="30" rows="10"></textarea> 
+                </fieldset>
             </div>
             
             <input type="submit" value="Enviar" id="enviar" class="btn btn-primary">
@@ -116,20 +115,6 @@
             </form>
         </div>
     </div>
-<script>
-    var Icono_Clima = document.getElementById("IconoClima")
-    var Temperatura = document.getElementById("Temperatura")
-    var Descripcion_clima = document.getElementById("Descripcion")
-    var Ubicacion_actual = navigator.geolocation.getCurrentPosition(function(data){
-        var latitud = data.coords.latitude
-        var longitud = data.coords.longitude
-        $.getJSON(`https://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&units=metric&appid=cbc6e4864eaeb1415d242341fde7954e`,function(data){
-        var icono = data.weather[0].icon
-        Icono_Clima.setAttribute("src",`https://openweathermap.org/img/wn/${icono}@2x.png`)
-        Temperatura.innerHTML = data.main.temp+"°C"
-        Descripcion_clima.innerHTML = data.weather[0].description
-    })
-    }) 
-</script>
+
 </body>
 </html>
